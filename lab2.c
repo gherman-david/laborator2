@@ -2,9 +2,12 @@
 #include <stdio.h>
 
 int function(int x){
+	if(x <= 0){
+		return x;
+	}
 	x=x-2;
-//	x=function(x);  comment: eliminam apelarea recursiva deoarece repetarea se face in main
-	return x;
+	  //UPDATE LA ANTERIOR nu mai scapam de recursivitate, punem stop comment: eliminam apelarea recursiva deoarece repetarea se face in main
+	return function(x);
 }
 
 int main(){
