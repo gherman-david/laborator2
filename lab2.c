@@ -3,7 +3,7 @@
 
 int function(int x){
 	x=x-2;
-	x=function(x);
+//	x=function(x);  comment: eliminam apelarea recursiva deoarece repetarea se face in main
 	return x;
 }
 
